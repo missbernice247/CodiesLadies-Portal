@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d4f1f9;
+    margin: 0;
+}
+
+/* Container Layout - Split Page */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left Side: Login Section */
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+/* Login Box - Centered Inside Left Section */
+.login-box {
+    text-align: center;
+    width: 80%;
+    max-width: 350px;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008ba3;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+/* Right Side: Slider */
+/* Make the right section a block-level element */
+.right-section {
+    display: block;
+    width: 50%; /* Ensures it takes half the screen */
+    margin: auto; /* Centers it if necessary */
+    text-align: center; /* Aligns content */
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 60%;
+    margin-left: 180px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+/* Dots */
+.dots {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #00bcd4;
+}
+
+
+.redirect  {
+    color: rgb(158, 3, 3);
+}
+
+
+.redirect a {
+    color: red;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left-section{
+        margin-top: 60px;
+    }
+
+    .slider {
+        max-width: 100%;
+        margin-left: 70px;
+    }
+}
